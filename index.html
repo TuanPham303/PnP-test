@@ -4,23 +4,114 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css.css">
   <title>Document</title>
 </head>
 <body>
-  <div class="logo">
-    <svg 
+  <svg 
+  id="body-line-svg"
+  version="1.1"
+  width="100vw"
+  height="100vh"
+  baseProfile="full"
+  xmlns="http://www.w3.org/2000/svg"
+  >
+    <path class="stripe" d="M0 200, L50 200" fill="transparent" stroke="#f2efde" />
+    <path class="stripe" d="M200 300, L250 300" fill="transparent" stroke="#f2efde"></path>
+    <path class="stripe" d="M1000 200, L1050 200" fill="transparent" stroke="#f2efde"></path>
+    <path class="stripe" d="M1400 50, L15000 50" fill="transparent" stroke="#f2efde"></path>
+    <path class="stripe" d="M1380 300, L11111 300" fill="transparent" stroke="#f2efde"></path>
+  </svg>
+  <header>
+    <div class="logo">
+      <svg 
+        id="logo-svg"
+        version="1.1"
+        baseProfile="full"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path class="logo-path" d="M 30 0, L 0 9, L 30 18, v 13.5, L 0 22.5, L 30 13.5" fill="transparent" stroke="#f2efde" />
+        <path class="logo-path" d="M 36 32.5, L 66 22.5, L 36 13.5, v -13.5, L 66 9, L 36 18" fill="transparent" stroke="#f2efde" />
+      </svg>
+    </div>
+    <div class="site-title hidden">
+      PROJECTSOUL
+    </div>
+    <div class="order hidden">
+      <p>ORDER NOW</p>
+    </div>
+    <div class="menu hidden">
+      <div class="menu-line"></div>
+      <div class="menu-line"></div>
+      <div class="menu-line"></div>
+    </div>
+  </header>
+
+  <div class="led-letter">
+    <div class="intro hidden">OUR LED CONFIGURATION</div>
+    <div class="led">
+      <svg 
+      id="letter-svg"
       version="1.1"
+      width="850px"
       baseProfile="full"
-      width="300" height="200"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+      style="filter: drop-shadow(rgba(255, 255, 255, 0.325) 0px 0px 6px) drop-shadow(rgba(255, 255, 255, 0.325) 0px 0px 6px) drop-shadow(rgba(255, 255, 255, 0.325) 0px 0px 6px);"
+      >
+        <g>
+          <!-- T -->
+          <path class="letter-path" d="M 0 0, h 50" fill="transparent" stroke="#f2efde" stroke-width="4px"/>
+          <path class="letter-path" d="M 25 0, v 50" fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
+          <!-- H -->
+          <path class="letter-path" d="M 80 0, v 50" fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
+          <path class="letter-path" d="M 130 0, v 50" fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
+          <path class="letter-path" d="M 80 25, h 50, M 35 0" fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
+          <!-- E -->
+          <path class="letter-path" d="M 160 0, v 50" fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
+          <path class="letter-path" d="M 160 0, h 40" fill="transparent" stroke="#f2efde" stroke-width="5px"/>
+          <path class="letter-path" d="M 160 25, h 35" fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
+          <path class="letter-path" d="M 160 50, h 40" fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
+          <!-- B -->
+          <path class="letter-path" d="M 280 0, v 50" fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
+          <path class="letter-path" d="M 280 0, h 35" fill="transparent" stroke="#f2efde" stroke-width="5px"/>
+          <path class="letter-path" d="M 280 23, h 35" fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
+          <path class="letter-path" d="M 280 50, h 35" fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
+          <path class="letter-path" d="M 315 1.3, C 325.7 3.7, 325.7 21.3, 315 23" fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
+          <path class="letter-path" d="M 315 23, C 328.7 25.7, 325.7 48.3, 315 50" fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
+          <!-- R -->
+          <path class="letter-path" d="M 350 0, v 50" fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
+          <path class="letter-path" d="M 350 0, h 30" fill="transparent" stroke="#f2efde" stroke-width="5px"/>
+          <path class="letter-path" d="M 350 30, h 30" fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
+          <path class="letter-path" d="M 380 1.3, C 400.7 2.7, 400.7 27.3, 380 30" fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
+          <path class="letter-path" d="M 380 30, L 395 50" fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
+          <!-- I -->
+          <path class="letter-path" d="M 420 0, v 50" fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
+          <!-- G -->
+          <path class="letter-path-g" d="M 500 20, C 495 -6,448 -5,445 25 S 493 70, 500 33 L 465 33 " fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
+          <!-- H -->
+          <path class="letter-path" d="M 530 0, v 50" fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
+          <path class="letter-path" d="M 580 0, v 50" fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
+          <path class="letter-path" d="M 530 25, h 50, M 35 0" fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
+          <!-- T -->
+          <path class="letter-path" d="M 600 0, h 50" fill="transparent" stroke="#f2efde" stroke-width="4px"/>
+          <path class="letter-path" d="M 625 0, v 50" fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
+          <!-- E -->
+          <path class="letter-path" d="M 670 0, v 50" fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
+          <path class="letter-path" d="M 670 0, h 40" fill="transparent" stroke="#f2efde" stroke-width="5px"/>
+          <path class="letter-path" d="M 670 25, h 35" fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
+          <path class="letter-path" d="M 670 50, h 40" fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
+          <!-- S -->
+          <path class="letter-path" d="M 780 17, C 782 -4,728 -4,730 17" fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
+          <path class="letter-path" d="M 730 17, C 732 27,745 27,755 27 S 780 30,780 40" fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
+          <path class="letter-path" d="M 780 40, C 782 57,728 57  ,730 40" fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
+          <!-- T -->
+          <path class="letter-path" d="M 800 0, h 50" fill="transparent" stroke="#f2efde" stroke-width="4px"/>
+          <path class="letter-path" d="M 825 0, v 50" fill="transparent" stroke="#f2efde" stroke-width="2.5px"/>
 
-      <rect width="100%" height="100%" fill="red" />
-
-      <circle cx="150" cy="100" r="80" fill="green" />
-
-      <text x="150" y="125" font-size="60" text-anchor="middle" fill="white">SVG</text>
-
-    </svg>
+        </g>
+      </svg>
+    </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+body {
+  background-image: url('./original-files/bg.jpg');
+  font-family: 'Montserrat', sans-serif;  
+}
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+}
+#logo-svg {
+  height: 32.5px;
+  width: 66px;
+}
+.logo-path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: logo 20s linear forwards;
+}
+@keyframes logo {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.site-title {
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f2efde;
+  font-size: 1.2em;
+  letter-spacing: 0.8em;
+  font-weight: normal;
+  transition: opacity 3s ease-in-out;
+}
+
+.order {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transform: translateX(-50%);
+  color: #f2efde;
+  transition: opacity 3s ease-in-out;
+}
+
+.menu {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  transform: translateX(-50%);
+  transition: opacity 3s ease-in-out;
+}
+.menu-line {
+  height: 1px;
+  width: 40px;
+  background-color: #f2efde;;
+  margin: 10px 0;
+}
+
+.led-letter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  width: 100vw;
+  text-align: center;
+}
+.intro {
+  letter-spacing: 1.5px;
+  transition: opacity 3s ease-in-out;
+}
+.led {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+#letter-svg {
+  display: block;
+  margin: 0 auto;
+}
+.letter-path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: letter 40s linear forwards;
+}
+@keyframes letter {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.letter-path-g {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: letter 10s linear forwards;
+}
+@keyframes letter {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.stripe {
+  opacity: 0;
+}
+.stripe-path {
+  opacity: 1;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: stripe 20s linear forwards;
+}
+@keyframes stripe {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
