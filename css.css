@@ -67,7 +67,7 @@ body {
 
 .led-letter {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
@@ -79,14 +79,18 @@ body {
   transition: opacity 3s ease-in-out;
 }
 .led {
-  margin-top: 20px;
+  margin-top: 50px;
   text-align: center;
   width: 100%;
+  width: 780px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
-#letter-svg {
+/* #letter-svg {
   display: block;
   margin: 0 auto;
-}
+} */
 .letter-path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
